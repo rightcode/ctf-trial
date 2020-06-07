@@ -1,0 +1,14 @@
+version: '3.2'
+
+services:
+  gcc:
+    image: gcc
+    working_dir: /working_dir
+    volumes:
+    - ./src:/working_dir/src
+
+  python:
+    image: python
+    working_dir: /working_dir
+    volumes:
+      - ./src:/working_dir/src
